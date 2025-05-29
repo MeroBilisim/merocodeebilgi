@@ -7,20 +7,33 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background: #f9f9f9;
       margin: 0;
       padding: 0;
       color: #333;
+      animation: fadeIn 1.2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
       background-color: #111;
       color: #fff;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
     }
+
     section {
       padding: 20px;
     }
+
+    h2 {
+      color: #111;
+    }
+
     .button {
       display: inline-block;
       margin: 10px 5px;
@@ -28,136 +41,72 @@
       background-color: #111;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
     .button:hover {
-      background-color: #444;
+      background-color: #333;
+      transform: scale(1.05);
     }
+
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .link-list a {
+      display: block;
+      margin: 5px 0;
+      color: #0066cc;
+    }
+
     footer {
+      background-color: #111;
+      color: white;
       text-align: center;
       padding: 20px;
-      background-color: #eee;
-      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Merocode Tanıtım</h1>
+  </header>
 
-<header>
-  <h1>Merocode Tanıtım</h1>
-</header>
+  <section class="box">
+    <h2>Hakkımda</h2>
+    <p>Web sitesi tasarlıyorum. HTML, CSS ve JavaScript ile mobil uyumlu, şık ve işlevsel siteler kuruyorum. Siz de kendinize özel bir site istiyorsanız iletişime geçebilirsiniz.</p>
+  </section>
 
-<section>
-  <h2>Hakkımda</h2>
-  <p>Web Sitesi Tasarlıyorum. HTML, CSS, JavaScript ile mobil uyumlu. Siz de site kurmak istiyorsanız iletişime ulaşabilirsiniz.</p>
-  <p><strong>NOT:</strong> Domain’i de belirtiniz.</p>
-</section>
+  <section class="box">
+    <h2>İletişim</h2>
+    <a class="button" href="https://wa.me/905424989302" target="_blank">WhatsApp</a>
+    <a class="button" href="https://www.instagram.com/merocodee?igsh=Zmx3ZG01YXBzczAw" target="_blank">Instagram</a>
+  </section>
 
-<section>
-  <h2>Hizmetler</h2>
-  <ul>
-    <li>Kişisel Web Sitesi</li>
-    <li>Firma Tanıtım Sitesi</li>
-    <li>Ürün Tanıtım Sayfası</li>
-    <li>Linktree benzeri yönlendirme sayfası</li>
-  </ul>
-</section>
+  <section class="box">
+    <h2>Domain (Alan Adı) Alma</h2>
+    <p>Web siteniz için bir alan adı (örnek: seninsiteniz.com) almanız gerekir. Ücretsiz domain almak için aşağıdaki siteye gidin:</p>
+    <a class="button" href="https://www.freenom.com" target="_blank">Ücretsiz Domain Al → Freenom.com</a>
+    <p>Domain aldıktan sonra bana iletin, sitenizi o adrese bağlayayım.</p>
+  </section>
 
-<section>
-  <h2>Fiyatlar</h2>
-  <p>100 TL - 300 TL arası</p>
-</section>
+  <section class="box">
+    <h2>Hazır Örnek Siteler</h2>
+    <p>Müşterilere özel yapılmış 3 örnek siteyi aşağıda görebilirsiniz:</p>
+    <div class="link-list">
+      <a href="https://merobilisim.github.io/merocodeebilgi" target="_blank">📘 Kişisel Tanıtım Sitesi</a>
+      <a href="https://merobilisim.github.io/portfolio1" target="_blank">📗 Portföy Web Sitesi</a>
+      <a href="https://merobilisim.github.io/hizmettanitim" target="_blank">📙 Hizmet Tanıtım Sayfası</a>
+    </div>
+  </section>
 
-<section>
-  <h2>İletişim</h2>
-  <a class="button" href="https://wa.me/905424989302" target="_blank">WhatsApp</a>
-  <a class="button" href="https://www.instagram.com/merocodee?igsh=Zmx3ZG01YXBzczAw" target="_blank">Instagram</a>
-</section>
-
-<footer>
-  <p>© 2025 Merocode</p>
-</footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Merocode Tanıtım</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-    }
-    .button {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 12px 20px;
-      background-color: #111;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .button:hover {
-      background-color: #444;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eee;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Merocode Tanıtım</h1>
-</header>
-
-<section>
-  <h2>Hakkımda</h2>
-  <p>Web Sitesi Tasarlıyorum. HTML, CSS, JavaScript ile mobil uyumlu. Siz de site kurmak istiyorsanız iletişime ulaşabilirsiniz.</p>
-  <p><strong>NOT:</strong> Domain’i de belirtiniz.</p>
-</section>
-
-<section>
-  <h2>Hizmetler</h2>
-  <ul>
-    <li>Kişisel Web Sitesi</li>
-    <li>Firma Tanıtım Sitesi</li>
-    <li>Ürün Tanıtım Sayfası</li>
-    <li>Linktree benzeri yönlendirme sayfası</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Fiyatlar</h2>
-  <p>100 TL - 300 TL arası</p>
-</section>
-
-<section>
-  <h2>İletişim</h2>
-  <a class="button" href="https://wa.me/905424989302" target="_blank">WhatsApp</a>
-  <a class="button" href="https://www.instagram.com/merocodee?igsh=Zmx3ZG01YXBzczAw" target="_blank">Instagram</a>
-</section>
-
-<footer>
-  <p>© 2025 Merocode</p>
-</footer>
-
+  <footer>
+    Merocode © 2025
+  </footer>
 </body>
 </html>
